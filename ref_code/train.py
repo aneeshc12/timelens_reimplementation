@@ -1,7 +1,7 @@
 # imports
 import os
-from ..timelens.common import transformers, hybrid_storage, os_tools
-from ..timelens.attention_average_network import AttentionAverage
+from timelens.common import transformers, hybrid_storage, os_tools
+from timelens.attention_average_network import AttentionAverage
 
 # load data, datasets, dataloaders
 

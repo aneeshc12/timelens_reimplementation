@@ -390,6 +390,8 @@ class EventSequence(object):
         for end_timestamp in timestamps[1:]:
             end_index = self._advance_index_to_timestamp(end_timestamp, start_index)
             self._features[start_index:end_index, :].size == 0
+            
+            # print(start_timestamp, " | ", end_timestamp, " | ", )
             yield EventSequence(
                 features=np.copy(self._features[start_index:end_index, :]),
                 image_height=self._image_height,
